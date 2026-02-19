@@ -196,7 +196,7 @@ All configuration steps and failover validation are documented inside the `scree
 - [02 – AWS Compute & ALB](./screenshots/02-aws-compute-alb/)
 - [03 – Azure Network](./screenshots/03-azure-network/)
 - [04 – Azure VMSS & Load Balancer](./screenshots/04-azure-compute-lb/)
-- [05 – Route 53 DNS Failover](./screenshots/05-route53-dns-failover/)
+- [05 – Route 53 DNS Failover](./screenshots/05-route53-DNS-failover/)
 
 
 
