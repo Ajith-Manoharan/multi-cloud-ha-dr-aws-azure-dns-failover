@@ -1,4 +1,4 @@
-# Multi-Cloud Active–Passive Failover (AWS → Azure DR)
+# Multi-Cloud High Availability & Disaster Recovery (AWS–Azure DNS Failover) 
 
 ## Project Overview
 
@@ -23,16 +23,16 @@ This information is fetched directly from each cloud provider’s metadata servi
 Under normal operation:
 
 Client  
-→ Route 53 (Primary record)  
-→ AWS Application Load Balancer  
-→ EC2 Instance  
+- Route 53 (Primary record)  
+- AWS Application Load Balancer  
+- EC2 Instance  
 
 If AWS becomes unhealthy:
 
 Client  
-→ Route 53 health check detects failure  
-→ DNS automatically switches to Azure endpoint  
-→ Azure VM serves traffic  
+- Route 53 health check detects failure  
+- DNS automatically switches to Azure endpoint  
+- Azure VM serves traffic  
 
 This is implemented as an active-passive model using DNS failover routing.
 
@@ -81,7 +81,7 @@ systemctl start nginx
 
 rm -rf /usr/share/nginx/html/*
 
-git clone https://github.com/<your-username>/multi-cloud-ha-failover-observability.git /tmp/app
+git clone https://github.com/<your-username>/multi-cloud-ha-dr-aws-azure-dns-failover.git /tmp/app
 cp -r /tmp/app/site/* /usr/share/nginx/html/
 
 INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
@@ -124,7 +124,7 @@ systemctl start nginx
 
 rm -rf /var/www/html/*
 
-git clone https://github.com/<your-username>/multi-cloud-ha-failover-observability.git /tmp/app
+git clone https://github.com/<your-username>/multi-cloud-ha-dr-aws-azure-dns-failover.git /tmp/app
 cp -r /tmp/app/site/* /var/www/html/
 
 AZ_JSON=$(curl -s -H "Metadata:true" \
@@ -204,7 +204,5 @@ This project demonstrates a practical implementation of multi-cloud resiliency u
 
 It reflects real-world disaster recovery patterns and emphasizes automation, reproducibility, and cross-cloud design.
 
----
 
-Ajith Manoharan  
-Cloud Engineer | AWS | Azure | DevOps
+
