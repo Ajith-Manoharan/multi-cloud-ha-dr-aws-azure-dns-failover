@@ -186,15 +186,22 @@ This validates the active-passive failover logic.
 
 ---
 
-# Improvements for Production
+## 📸 Screenshots & Implementation Proof
 
-If this were production:
+All configuration steps and validation proof are documented inside the `screenshots/` directory.
 
-- Use Infrastructure as Code (Terraform)
-- Containerize application
-- Add CI/CD pipeline
-- Implement centralized monitoring
-- Consider active-active design
+### Structure
+
+- screenshots/01-aws-network/
+- screenshots/02-aws-compute-alb/
+- screenshots/03-azure-network/
+- screenshots/04-azure-compute-lb/
+- screenshots/05-route53-dns-failover/
+- screenshots/06-failover-simulation/
+- screenshots/07-validation-tests/
+- screenshots/08-cleanup-cost-control/
+
+Each folder contains a dedicated README.md showcasing the implementation screenshots for that phase.
 
 ---
 
