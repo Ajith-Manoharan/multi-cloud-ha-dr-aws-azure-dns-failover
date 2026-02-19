@@ -52,7 +52,7 @@ This section covers the foundational AWS networking setup for the multi-cloud hi
 
 ## 7️⃣ Security Groups Configuration
 
-![Security Groups](./08-security-groups-alb-ec2.png)
+![Security Groups](./07-security-groups-alb-ec2.png)
 
 ---
 
