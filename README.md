@@ -188,20 +188,20 @@ This validates the active-passive failover logic.
 
 ## 📸 Screenshots & Implementation Proof
 
-All configuration steps and validation proof are documented inside the `screenshots/` directory.
+All configuration steps and failover validation are documented inside the `screenshots/` directory.
 
-### Structure
+### Browse by Section
 
-- screenshots/01-aws-network/
-- screenshots/02-aws-compute-alb/
-- screenshots/03-azure-network/
-- screenshots/04-azure-compute-lb/
-- screenshots/05-route53-dns-failover/
-- screenshots/06-failover-simulation/
-- screenshots/07-validation-tests/
-- screenshots/08-cleanup-cost-control/
+- [01 – AWS Network](./screenshots/01-aws-network/)
+- [02 – AWS Compute & ALB](./screenshots/02-aws-compute-alb/)
+- [03 – Azure Network](./screenshots/03-azure-network/)
+- [04 – Azure VMSS & Load Balancer](./screenshots/04-azure-compute-lb/)
+- [05 – Route 53 DNS Failover](./screenshots/05-route53-dns-failover/)
 
-Each folder contains a dedicated README.md showcasing the implementation screenshots for that phase.
+
+
+Each folder contains a dedicated `README.md` displaying the screenshots for that implementation phase.
+
 
 ---
 
