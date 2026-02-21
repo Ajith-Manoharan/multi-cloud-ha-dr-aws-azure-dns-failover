@@ -186,7 +186,7 @@ This validates the active-passive failover logic.
 
 ---
 
-## 📸 Screenshots & Implementation Proof
+## Screenshots & Implementation Proof
 
 All configuration steps and failover validation are documented inside the `screenshots/` directory.
 
